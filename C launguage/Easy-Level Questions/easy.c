@@ -694,5 +694,104 @@
 //}
 
 
+//que-36
+//int main(){
+//    int n, i, j;
+//    printf("number of rows=");
+//    scanf("%d", &n);
+//
+//    for (i = 1; i <= n; i++) {
+//        for (j = 1; j <= n - i; j++) printf(" ");
+//        for (j = 1; j <= 2 * i - 1; j++) printf("*");
+//        printf("\n");
+//    }
+//
+//    return 0;
+//}
 
+
+//que-37
+//int main(){
+//	int i;
+//    int arr[]={5, 7, 7, 8, 8, 10};
+//    int target=8;
+//    int start= -1,end= -1;
+//
+//    for(i=0;i<6;i++) {
+//        if(arr[i]==target) {
+//            if(start == -1)start = i;
+//            end=i;
+//        }
+//    }
+//    printf("[%d, %d]\n", start, end);
+//    return 0;
+//}
+
+
+// //que-38
+// int main() {
+// float cel;
+// printf("cel=");
+// scanf("%f",& cel);
+// printf("fah=%.1f",cel*9/5 + 32);
+//     return 0;
+// }
+
+
+// //que-39
+
+
+
+// //que-40
+//int main() {
+//    int start, end,i;
+//
+//    printf("starting number=");
+//    scanf("%d",&start);
+//    printf("ending number=");
+//    scanf("%d",&end);
+//
+//    printf("[");
+//    for(i=start;i<=end;i++) {
+//        printf("%d",i);
+//        if (i != end) {
+//            printf(", ");
+//        }
+//    }
+//    printf("]");
+//    return 0;
+//}
+
+
+// //que-41
+
+
+
+// //que-42
+//int main(){
+//    int event1[2], event2[2];
+//    int conflict;
+//
+//   
+//    printf("give start and end times for event 1\n");
+//    scanf("%d %d", &event1[0], &event1[1]);
+//
+//
+//    printf("give start and end times for event 2\n");
+//    scanf("%d %d", &event2[0], &event2[1]);
+//
+//    if(event1[1] <= event2[0] || event2[1] <= event1[0]){
+//        conflict=0;
+//    }else{
+//        conflict=1;
+//    }
+//
+//    if (conflict){
+//        printf("Output: true\n");
+//    }else{
+//        printf("Output: false\n");
+//    }
+//
+//    return 0;
+//}
 
