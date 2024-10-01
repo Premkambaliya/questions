@@ -766,7 +766,6 @@
 // //que-41
 
 
-
 // //que-42
 //int main(){
 //    int event1[2], event2[2];
@@ -795,3 +794,77 @@
 //    return 0;
 //}
 
+
+// //que-43
+//int findMax(int arr[], int size) {
+//    int maxCount = 0, currentCount = 0;
+//    int i;
+//
+//    for (i = 0; i < size; i++) {
+//        if (arr[i] == 1) {
+//            currentCount++;
+//            if (currentCount > maxCount) {
+//                maxCount = currentCount;
+//            }
+//        } else {
+//            currentCount = 0;
+//        }
+//    }
+//
+//    return maxCount;
+//}
+//
+//int main() {
+//    int arr[] = {1, 1, 0, 1, 1, 1};
+//    int size = sizeof(arr) / sizeof(arr[0]);
+//    printf("Max Consecutive Ones: %d\n", findMax(arr, size));
+//    return 0;
+//}
+
+
+// //que-44
+//#include <string.h>
+//void printAll(char* str) {
+//    int length = strlen(str);
+//    int i,j,k;
+//
+//    for (i = 0; i < length; i++) {
+//        for (j = i; j < length; j++) {
+//            for (k = i; k <= j; k++) {
+//                printf("%c", str[k]);
+//            }
+//            printf("\n");
+//        }
+//    }
+//}
+//
+//int main() {
+//    char str[] = "abc";
+//    printAll(str);
+//    return 0;
+//}
+
+
+// //que-45
+#include <stdio.h>
+#include <string.h>
+
+void findLong(char* sentence) {
+    char* word = strtok(sentence, " ");
+    char* longestWord = word;
+
+    while (word != NULL) {
+        if (strlen(word) > strlen(longestWord)) {
+            longestWord = word;
+        }
+        word = strtok(NULL, " ");
+    }
+
+    printf("Longest word: %s\n", longestWord);
+}
+
+int main() {
+    char sentence[] = "I love programming in JavaScript";
+    findLong(sentence);
+    return 0;
+}
